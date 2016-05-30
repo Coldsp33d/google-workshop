@@ -50,7 +50,7 @@ public class GhostActivity extends AppCompatActivity {
 
         c = Character.toString(c).toLowerCase().charAt(0);
 
-        if(c >= 'a' && c <= 'z')
+        if(userTurn && (c >= 'a' && c <= 'z'))
         {
             String fragment = text.getText() + Character.toString(c);
             text.setText(fragment);

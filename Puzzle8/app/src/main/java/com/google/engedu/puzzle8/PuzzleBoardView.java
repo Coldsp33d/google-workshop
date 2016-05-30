@@ -99,7 +99,7 @@ public class PuzzleBoardView extends View {
     public void solve() {
         PuzzleBoard temp = null;
         ArrayList<PuzzleBoard> visited = new ArrayList<>();
-        PriorityQueue<PuzzleBoard> priorityQueue= new PriorityQueue<>(10, new Comparator<PuzzleBoard>()
+        /*PriorityQueue<PuzzleBoard> priorityQueue= new PriorityQueue<>(10, new Comparator<PuzzleBoard>()
                 {
                     @Override
                     public int compare(PuzzleBoard state1, PuzzleBoard state2)
@@ -111,6 +111,8 @@ public class PuzzleBoardView extends View {
                         return (state1.priority() - state2.priority());
                     }
                 });
+*/
+        CustomPriorityQueue priorityQueue = new CustomPriorityQueue();
 
         puzzleBoard.reset();
         priorityQueue.add(puzzleBoard);
